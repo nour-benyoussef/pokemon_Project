@@ -11,4 +11,6 @@ add_executable(untitled main.cpp
         Pokedex.cpp
         Pokedex.h
         Pokeball.cpp
-        Pokeball.h)
+        Pokeball.h
+        PokemonParty.cpp
+        PokemonParty.h)

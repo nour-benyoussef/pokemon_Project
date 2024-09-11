@@ -1,14 +1,7 @@
 # ninja log v6
-4	551	7476569261407445	CMakeFiles/untitled.dir/main.cpp.obj	798a40c326dd059b
+60	1113	7477642159107833	CMakeFiles/untitled.dir/main.cpp.obj	798a40c326dd059b
 5	453	7476569449020497	CMakeFiles/untitled.dir/Pokemon.cpp.obj	8ba1b1cafadd30aa
-453	556	7476569453508506	untitled.exe	cffe1d6e9bd0b2eb
-8	530	7476569261447336	CMakeFiles/untitled.dir/SetOfPokemon.cpp.obj	f77e0f2fcc807c08
-11	692	7476569261477262	CMakeFiles/untitled.dir/Pokedex.cpp.obj	1b945b4daaea9fb9
-245	2492	7477622892164741	CMakeFiles/untitled.dir/Pokeball.cpp.obj	3040e0a509819c08
-107	2526	7477622890798397	CMakeFiles/untitled.dir/main.cpp.obj	798a40c326dd059b
+1113	1383	7477642169629826	untitled.exe	aa4ea9f747db1db7
 232	2548	7477622892045222	CMakeFiles/untitled.dir/SetOfPokemon.cpp.obj	f77e0f2fcc807c08
 238	2823	7477622892104854	CMakeFiles/untitled.dir/Pokedex.cpp.obj	1b945b4daaea9fb9
-2823	3571	7477622917949517	untitled.exe	aa4ea9f747db1db7
 75	1023	7477642159256928	CMakeFiles/untitled.dir/Pokeball.cpp.obj	3040e0a509819c08
-60	1113	7477642159107833	CMakeFiles/untitled.dir/main.cpp.obj	798a40c326dd059b
-1113	1383	7477642169629826	untitled.exe	aa4ea9f747db1db7

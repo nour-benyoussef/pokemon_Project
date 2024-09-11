@@ -79,6 +79,12 @@ build CMakeFiles/untitled.dir/Pokeball.cpp.obj: CXX_COMPILER__untitled_unscanned
   OBJECT_DIR = CMakeFiles\untitled.dir
   OBJECT_FILE_DIR = CMakeFiles\untitled.dir
 
+build CMakeFiles/untitled.dir/PokemonParty.cpp.obj: CXX_COMPILER__untitled_unscanned_Debug C$:/Users/NOUR/CLionProjects/untitled/PokemonParty.cpp || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles\untitled.dir\PokemonParty.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles\untitled.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target untitled
@@ -87,7 +93,7 @@ build CMakeFiles/untitled.dir/Pokeball.cpp.obj: CXX_COMPILER__untitled_unscanned
 #############################################
 # Link the executable untitled.exe
 
-build untitled.exe: CXX_EXECUTABLE_LINKER__untitled_Debug CMakeFiles/untitled.dir/main.cpp.obj CMakeFiles/untitled.dir/Pokemon.cpp.obj CMakeFiles/untitled.dir/SetOfPokemon.cpp.obj CMakeFiles/untitled.dir/Pokedex.cpp.obj CMakeFiles/untitled.dir/Pokeball.cpp.obj
+build untitled.exe: CXX_EXECUTABLE_LINKER__untitled_Debug CMakeFiles/untitled.dir/main.cpp.obj CMakeFiles/untitled.dir/Pokemon.cpp.obj CMakeFiles/untitled.dir/SetOfPokemon.cpp.obj CMakeFiles/untitled.dir/Pokedex.cpp.obj CMakeFiles/untitled.dir/Pokeball.cpp.obj CMakeFiles/untitled.dir/PokemonParty.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\untitled.dir
