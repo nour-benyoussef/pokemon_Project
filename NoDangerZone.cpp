@@ -21,7 +21,7 @@ void NoDangerZone::handleRequest(Player *& player1,Player *& player2) {
         player1->getPokeball()->RecupererPokemon(pokedexInstance,randomValue);
     }
     player1->getPokeball()->displayList();
-    std::cout << "fin no danger zone" <<std::endl;
+    std::cout << "fin no danger zone " <<std::endl;
 
 
  }
