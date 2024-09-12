@@ -55,4 +55,13 @@ Pokemon * Pokedex::getPokemonbyname(std::string name) {
         return new Pokemon(*ArrayOfPokemons.at(i));
 return nullptr;
 }
+int Pokedex::MaxIdPokemon() {
+    int max = 0;
+    for (int i=0; i<ArrayOfPokemons.size(); i++) {
+            if (ArrayOfPokemons.at(i)->getId() > max)
+                max = ArrayOfPokemons.at(i)->getId();
+    }
+    return max;
+}
+
 

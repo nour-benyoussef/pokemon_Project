@@ -85,6 +85,60 @@ build CMakeFiles/untitled.dir/PokemonParty.cpp.obj: CXX_COMPILER__untitled_unsca
   OBJECT_DIR = CMakeFiles\untitled.dir
   OBJECT_FILE_DIR = CMakeFiles\untitled.dir
 
+build CMakeFiles/untitled.dir/GameState.cpp.obj: CXX_COMPILER__untitled_unscanned_Debug C$:/Users/NOUR/CLionProjects/untitled/GameState.cpp || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles\untitled.dir\GameState.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles\untitled.dir
+
+build CMakeFiles/untitled.dir/Attente.cpp.obj: CXX_COMPILER__untitled_unscanned_Debug C$:/Users/NOUR/CLionProjects/untitled/Attente.cpp || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles\untitled.dir\Attente.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles\untitled.dir
+
+build CMakeFiles/untitled.dir/Init.cpp.obj: CXX_COMPILER__untitled_unscanned_Debug C$:/Users/NOUR/CLionProjects/untitled/Init.cpp || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles\untitled.dir\Init.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles\untitled.dir
+
+build CMakeFiles/untitled.dir/Player.cpp.obj: CXX_COMPILER__untitled_unscanned_Debug C$:/Users/NOUR/CLionProjects/untitled/Player.cpp || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles\untitled.dir\Player.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles\untitled.dir
+
+build CMakeFiles/untitled.dir/Game.cpp.obj: CXX_COMPILER__untitled_unscanned_Debug C$:/Users/NOUR/CLionProjects/untitled/Game.cpp || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles\untitled.dir\Game.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles\untitled.dir
+
+build CMakeFiles/untitled.dir/NoDangerZone.cpp.obj: CXX_COMPILER__untitled_unscanned_Debug C$:/Users/NOUR/CLionProjects/untitled/NoDangerZone.cpp || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles\untitled.dir\NoDangerZone.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles\untitled.dir
+
+build CMakeFiles/untitled.dir/DangerZone.cpp.obj: CXX_COMPILER__untitled_unscanned_Debug C$:/Users/NOUR/CLionProjects/untitled/DangerZone.cpp || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles\untitled.dir\DangerZone.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles\untitled.dir
+
+build CMakeFiles/untitled.dir/Combat.cpp.obj: CXX_COMPILER__untitled_unscanned_Debug C$:/Users/NOUR/CLionProjects/untitled/Combat.cpp || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles\untitled.dir\Combat.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles\untitled.dir
+
+build CMakeFiles/untitled.dir/EndGame.cpp.obj: CXX_COMPILER__untitled_unscanned_Debug C$:/Users/NOUR/CLionProjects/untitled/EndGame.cpp || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles\untitled.dir\EndGame.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles\untitled.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target untitled
@@ -93,7 +147,7 @@ build CMakeFiles/untitled.dir/PokemonParty.cpp.obj: CXX_COMPILER__untitled_unsca
 #############################################
 # Link the executable untitled.exe
 
-build untitled.exe: CXX_EXECUTABLE_LINKER__untitled_Debug CMakeFiles/untitled.dir/main.cpp.obj CMakeFiles/untitled.dir/Pokemon.cpp.obj CMakeFiles/untitled.dir/SetOfPokemon.cpp.obj CMakeFiles/untitled.dir/Pokedex.cpp.obj CMakeFiles/untitled.dir/Pokeball.cpp.obj CMakeFiles/untitled.dir/PokemonParty.cpp.obj
+build untitled.exe: CXX_EXECUTABLE_LINKER__untitled_Debug CMakeFiles/untitled.dir/main.cpp.obj CMakeFiles/untitled.dir/Pokemon.cpp.obj CMakeFiles/untitled.dir/SetOfPokemon.cpp.obj CMakeFiles/untitled.dir/Pokedex.cpp.obj CMakeFiles/untitled.dir/Pokeball.cpp.obj CMakeFiles/untitled.dir/PokemonParty.cpp.obj CMakeFiles/untitled.dir/GameState.cpp.obj CMakeFiles/untitled.dir/Attente.cpp.obj CMakeFiles/untitled.dir/Init.cpp.obj CMakeFiles/untitled.dir/Player.cpp.obj CMakeFiles/untitled.dir/Game.cpp.obj CMakeFiles/untitled.dir/NoDangerZone.cpp.obj CMakeFiles/untitled.dir/DangerZone.cpp.obj CMakeFiles/untitled.dir/Combat.cpp.obj CMakeFiles/untitled.dir/EndGame.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\untitled.dir

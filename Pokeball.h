@@ -13,6 +13,8 @@ public:
     void RecupererPokemon(Pokedex *p, int id);
     Pokemon *getPokemonbyindice(int indice) override;
     Pokemon *getPokemonbyname(std::string name) override;
+    int LastValue();
+    int FirstValue();
 };
 
 

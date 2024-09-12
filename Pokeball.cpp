@@ -33,3 +33,11 @@ Pokemon *Pokeball::getPokemonbyname(std::string name) {
     }
     return nullptr;
 }
+
+int Pokeball::LastValue() {
+    return ArrayOfPokemons.at(ArrayOfPokemons.size()-1)->getId();
+}
+
+int Pokeball::FirstValue() {
+    return ArrayOfPokemons.at(0)->getId();
+}

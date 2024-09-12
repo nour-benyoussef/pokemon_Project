@@ -46,14 +46,14 @@ int Pokemon::getGeneration() const {
     return numeberOfPokemon;
 }
 
-void Pokemon::AttaquePokemon(const Pokemon &anotherPokemon) {
+void Pokemon::AttaquePokemon(const Pokemon *anotherPokemon) {
     cout<<"**************************AttaquePokemon*********************************"<<endl;
-    if(attack >= anotherPokemon.defense) {
-        anotherPokemon.hitPoint = attack-anotherPokemon.defense;
+    if(attack >= anotherPokemon->defense) {
+        anotherPokemon->hitPoint = attack-anotherPokemon->defense;
     } else {
         cout<<"attaque missed" <<endl;
     }
-    if (anotherPokemon.hitPoint == 0) {
+    if (anotherPokemon->hitPoint == 0) {
         cout<<"**********************************Pokemon defense mort**********************"<<endl;
     }
 }

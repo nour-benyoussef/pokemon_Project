@@ -25,7 +25,7 @@ public:
     double getAttack ()const;
     double getDefense()const;
     int getGeneration() const;
-    void AttaquePokemon(const Pokemon & anotherPokemon);
+    void AttaquePokemon(const Pokemon * anotherPokemon);
     void displayInfo() const;
     static int getNumberOfPokemon();
 

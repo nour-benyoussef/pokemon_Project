@@ -16,6 +16,7 @@ public:
     static Pokedex *getInstance(const std::string &filename);
     Pokemon *getPokemonbyindice(int indice) override;
     Pokemon *getPokemonbyname(std::string name) override;
+    int MaxIdPokemon ();
 };
 
 

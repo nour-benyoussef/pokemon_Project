@@ -23,6 +23,9 @@ public:
     void displayList();
 
     virtual ~SetOfPokemon() ;
+    int sizeSetOfPokemon();
+    void sortSetOfPokemon();
+    bool hasPokemonWithID(int id);
 
 
 };

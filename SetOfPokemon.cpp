@@ -5,12 +5,17 @@
 #include "SetOfPokemon.h"
 
 #include <iostream>
+#include <algorithm>  // For std::sort
 
 void SetOfPokemon::displayList() {
     std::cout<<"**************************************"<<std::endl;
     for (Pokemon * pokemon : ArrayOfPokemons) {
         pokemon -> displayInfo();
     }
+}
+
+int SetOfPokemon::sizeSetOfPokemon() {
+    return ArrayOfPokemons.size();
 }
 SetOfPokemon::SetOfPokemon() {
     // Constructor implementation
@@ -37,4 +42,20 @@ int SetOfPokemon::findById (int id) {
     return -1;
 
 }
+void SetOfPokemon::sortSetOfPokemon() {
+    std::sort(ArrayOfPokemons.begin(), ArrayOfPokemons.end(), [](const Pokemon* a, const Pokemon* b) {
+      return a->getId() < b->getId();  // Replace getId() with the actual method you use to get the ID or criteria for sorting
+  });
+
+}
+
+bool SetOfPokemon::hasPokemonWithID(int id) {
+    for (Pokemon *p : ArrayOfPokemons) {
+        if (p->getId() == id) {
+            return true;
+        }
+    }
+    return false;
+}
+
 

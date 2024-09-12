@@ -1,7 +1,11 @@
 #include <iostream>
 
+#include "DangerZone.h"
 #include "Pokedex.h"
 #include "Pokemon.h"
+#include "Game.h"
+#include "Init.h"
+#include "NoDangerZone.h"
 
 int main() {
     std::cout << "****************Pokemon test**************************" << std::endl;
@@ -22,7 +26,7 @@ int main() {
     Pokemon *p2 = pok ->getPokemonbyindice(700);
     p2->displayInfo();*/
 
-    std::cout << "******* Pokemon test *******" << std::endl;
+    /*std::cout << "******* Pokemon test *******" << std::endl;
 
     Pokedex* pokedexInstance = Pokedex::getInstance("../ressources/pokedex.csv");
     Pokedex* pokedexInstanceNumber2 = Pokedex::getInstance("../ressources/pokedex.csv");
@@ -37,7 +41,15 @@ int main() {
     testGet->displayInfo();
 
     std::cout <<"Nombre de Pokemon en memoire : " << Pokemon::getNumberOfPokemon() << std::endl;
+*/
 
+    Game *g1 = new Game ();
+    g1->setState(new Init());
+    g1->request();
+    g1->setState(new NoDangerZone());
+    g1->request();
+    g1->setState(new DangerZone());
+    g1->request();
 
     return 0;
 }

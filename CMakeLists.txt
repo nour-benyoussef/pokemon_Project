@@ -13,4 +13,22 @@ add_executable(untitled main.cpp
         Pokeball.cpp
         Pokeball.h
         PokemonParty.cpp
-        PokemonParty.h)
+        PokemonParty.h
+        GameState.cpp
+        GameState.h
+        Attente.cpp
+        Attente.h
+        Init.cpp
+        Init.h
+        Player.cpp
+        Player.h
+        Game.cpp
+        Game.h
+        NoDangerZone.cpp
+        NoDangerZone.h
+        DangerZone.cpp
+        DangerZone.h
+        Combat.cpp
+        Combat.h
+        EndGame.cpp
+        EndGame.h)
