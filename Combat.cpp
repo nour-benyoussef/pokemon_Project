@@ -33,7 +33,7 @@ void Combat::handleRequest(Player*& player1,Player*& player2) {
 //party1->displayList();
 
 
-   /* int id2;
+    int id2;
     int j=0;
     std::vector<int> idParty2;
     while (j<6) {
@@ -50,10 +50,10 @@ void Combat::handleRequest(Player*& player1,Player*& player2) {
 
     }
     PokemonParty *party2 =  new PokemonParty(idParty2.at(0),idParty2.at(1),idParty2.at(2),idParty2.at(3),idParty2.at(4),idParty2.at(5),player2->getPokeball());
-
-   /* for (int k = 0; k < party1->sizeSetOfPokemon(); k++) {
+///party2->displayList();
+   for (int k = 0; k < party1->sizeSetOfPokemon(); k++) {
         Pokemon* p1 = party1->getPokemonbyindice(k);
-     //   Pokemon* p2 = party2->getPokemonbyindice(k);
+        Pokemon* p2 = party2->getPokemonbyindice(k);
         //p1->displayInfo();
        //p2->displayInfo();
 
@@ -61,8 +61,8 @@ void Combat::handleRequest(Player*& player1,Player*& player2) {
 
             if (p1->getAttack() >= p2->getDefense()) {
                 p1->AttaquePokemon(p2);
-                p1->displayInfo();
-                p2->displayInfo();
+                //p1->displayInfo();
+                //p2->displayInfo();
 
             }else if (p2->getAttack() >= p1->getDefense()) {
                 p2->AttaquePokemon(p1);
@@ -71,7 +71,7 @@ void Combat::handleRequest(Player*& player1,Player*& player2) {
 
         }
 
-    }*/
+    }
 
 
     /*if (party1->sizeSetOfPokemon()>party2->sizeSetOfPokemon()) {

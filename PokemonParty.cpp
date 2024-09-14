@@ -21,7 +21,6 @@ void PokemonParty::RecuperePokemon(Pokeball *p, int indice) {
     Pokemon* pokemon = p->getPokemonbyindice(indice);
     if (pokemon != nullptr) {
         ArrayOfPokemons.push_back(pokemon);
-        pokemon->displayInfo();
     } else {
         std::cerr << "Erreur: Pokemon non trouvé pour l'indice " << indice << std::endl;
     }

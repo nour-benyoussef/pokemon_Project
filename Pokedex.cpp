@@ -41,7 +41,7 @@ Pokedex *Pokedex::getInstance(const std::string &filename) {
 
 Pokemon * Pokedex::getPokemonbyindice(int indice) {
     int i=findById (indice);
-    if (i>0)
+    if (i>=0)
         return new Pokemon(*ArrayOfPokemons.at(i));
 
     return nullptr;
