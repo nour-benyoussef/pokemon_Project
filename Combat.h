@@ -10,7 +10,7 @@
 class Combat : public GameState{
 
 public:
-    void handleRequest(Player* player1,Player* player2);
+    void handleRequest(Player*& player1,Player*& player2) override;
 };
 
 

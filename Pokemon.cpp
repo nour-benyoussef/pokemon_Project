@@ -17,11 +17,11 @@ Pokemon::~Pokemon() {
 }
 void Pokemon::displayInfo() const {
     cout<<"*****************************Pokemon affiche *********************** "<<endl;
-    cout<<"Pokemon id: "<<id<<endl;
-    cout<<"Name: "<<name<<endl;
+   cout<<"Pokemon id: "<<id<<endl;
+    //cout<<"Name: "<<name<<endl;
     cout<<"Hitpoint: "<<hitPoint<<endl;
-    cout<<"defense: "<<defense<<endl;
-    cout<<"attaque: " <<attack<<endl;
+    //cout<<"defense: "<<defense<<endl;
+    //cout<<"attaque: " <<attack<<endl;*/
 }
 
 int Pokemon::getId() const {
@@ -46,16 +46,20 @@ int Pokemon::getGeneration() const {
     return numeberOfPokemon;
 }
 
-void Pokemon::AttaquePokemon(const Pokemon *anotherPokemon) {
-    cout<<"**************************AttaquePokemon*********************************"<<endl;
-    if(attack >= anotherPokemon->defense) {
-        anotherPokemon->hitPoint = attack-anotherPokemon->defense;
-    } else {
-        cout<<"attaque missed" <<endl;
+
+void Pokemon::AttaquePokemon(Pokemon *anotherPokemon) {
+    if (this->attack > anotherPokemon->defense){
+        anotherPokemon->sustainDamage(this->attack-anotherPokemon->defense);
     }
-    if (anotherPokemon->hitPoint == 0) {
-        cout<<"**********************************Pokemon defense mort**********************"<<endl;
+    else{
+        std::cout << "Attack missed ! " << std::endl;
     }
+}
+
+void Pokemon::sustainDamage(int value) {
+    hitPoint=(hitPoint-value)>0?hitPoint-value:0;
+    std::cout << "Pokemon " << name << " sustained a " << value <<
+    " damage. New hitPoint : " << hitPoint << std::endl;
 }
 
 

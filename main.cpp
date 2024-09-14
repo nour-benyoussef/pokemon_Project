@@ -1,5 +1,6 @@
 #include <iostream>
 
+#include "Combat.h"
 #include "DangerZone.h"
 #include "Pokedex.h"
 #include "Pokemon.h"
@@ -50,6 +51,7 @@ int main() {
     g1->request();
     g1->setState(new DangerZone());
     g1->request();
-
+    g1->setState(new Combat());
+    g1->request();
     return 0;
 }

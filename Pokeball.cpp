@@ -3,6 +3,9 @@
 //
 
 #include "Pokeball.h"
+
+#include <iostream>
+
 #include "SetOfPokemon.h".
 Pokeball::Pokeball() {
 
@@ -17,7 +20,7 @@ void Pokeball::RecupererPokemon(Pokedex *p , int id) {
 Pokemon * Pokeball::getPokemonbyindice(int indice) {
     int i=findById(indice);
     if (i>0) {
-        Pokemon *p=this->ArrayOfPokemons.at(i);
+        Pokemon *p=new Pokemon(*ArrayOfPokemons.at(i));
         ArrayOfPokemons.erase(ArrayOfPokemons.begin()+i);
         return p;
     }
