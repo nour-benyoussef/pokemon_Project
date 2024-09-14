@@ -72,6 +72,8 @@ void Combat::handleRequest(Player*& player1,Player*& player2) {
         }
 
     }
+    party1->displayList();
+    party2->displayList();
 
 
     /*if (party1->sizeSetOfPokemon()>party2->sizeSetOfPokemon()) {

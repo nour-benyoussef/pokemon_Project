@@ -16,10 +16,10 @@ Pokemon::~Pokemon() {
     numeberOfPokemon--;
 }
 void Pokemon::displayInfo() const {
-    cout<<"*****************************Pokemon affiche *********************** "<<endl;
-   cout<<"Pokemon id: "<<id<<endl;
+    //cout<<"*****************************Pokemon affiche *********************** "<<endl;
+   cout<<"Pokemon id: "<<id<<"  Hitpoint: "<<hitPoint<<endl;
     //cout<<"Name: "<<name<<endl;
-    cout<<"Hitpoint: "<<hitPoint<<endl;
+    //cout<<"Hitpoint: "<<hitPoint<<endl;
     //cout<<"defense: "<<defense<<endl;
     //cout<<"attaque: " <<attack<<endl;*/
 }
