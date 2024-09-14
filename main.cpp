@@ -2,6 +2,7 @@
 
 #include "Combat.h"
 #include "DangerZone.h"
+#include "EndGame.h"
 #include "Pokedex.h"
 #include "Pokemon.h"
 #include "Game.h"
@@ -44,14 +45,19 @@ int main() {
     std::cout <<"Nombre de Pokemon en memoire : " << Pokemon::getNumberOfPokemon() << std::endl;
 */
 
-    Game *g1 = new Game ();
+    Game *g1 = new Game();
     g1->setState(new Init());
     g1->request();
     g1->setState(new NoDangerZone());
     g1->request();
-    g1->setState(new DangerZone());
+    while (GameState::getNbrOfwinP1() < 2 && GameState::getNbrOfwinP2() < 2) {
+        g1->setState(new DangerZone());
+        g1->request();
+        g1->setState(new Combat());
+        g1->request();
+    }
+    g1->setState(new EndGame());
     g1->request();
-    g1->setState(new Combat());
-    g1->request();
+
     return 0;
 }

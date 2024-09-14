@@ -47,12 +47,14 @@ int Pokemon::getGeneration() const {
 }
 
 
-void Pokemon::AttaquePokemon(Pokemon *anotherPokemon) {
+int Pokemon::AttaquePokemon(Pokemon *anotherPokemon) {
     if (this->attack > anotherPokemon->defense){
         anotherPokemon->sustainDamage(this->attack-anotherPokemon->defense);
+        return 1;
     }
     else{
         std::cout << "Attack missed ! " << std::endl;
+        return 0 ;
     }
 }
 

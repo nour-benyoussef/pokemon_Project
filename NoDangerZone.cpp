@@ -22,6 +22,10 @@ void NoDangerZone::handleRequest(Player *& player1,Player *& player2) {
     }
     player1->getPokeball()->displayList();
     std::cout << "fin no danger zone " <<std::endl;
-
+    string input;
+    std::cout <<"welcome Player 2 your name please : "<< std::endl;
+    std::cin >> input;
+    player2 = new Player(input);
+    nbrwinP2=0;
 
  }

@@ -54,36 +54,51 @@ void Combat::handleRequest(Player*& player1,Player*& player2) {
    for (int k = 0; k < party1->sizeSetOfPokemon(); k++) {
         Pokemon* p1 = party1->getPokemonbyindice(k);
         Pokemon* p2 = party2->getPokemonbyindice(k);
-        //p1->displayInfo();
-       //p2->displayInfo();
+        p1->displayInfo();
+       p2->displayInfo();
 
         while (p1->getHitPoint() > 0 && p2->getHitPoint() > 0) {
 
             if (p1->getAttack() >= p2->getDefense()) {
-                p1->AttaquePokemon(p2);
-                //p1->displayInfo();
-                //p2->displayInfo();
+               if  (p1->AttaquePokemon(p2) ==0)
+                   break;
 
             }else if (p2->getAttack() >= p1->getDefense()) {
-                p2->AttaquePokemon(p1);
+               if (p2->AttaquePokemon(p1) == 0)
+                   break;
 
+            }else {
+                break;
             }
 
         }
 
     }
+
     party1->displayList();
     party2->displayList();
 
+    int numberOfWinners1 = 0 ;
+    int numberOfWinners2 = 0 ;
+    for (int i = 0; i < party1->sizeSetOfPokemon(); i++) {
+        if(party1->getPokemonbyindice(i)->getHitPoint() > 0)
+            numberOfWinners1 ++ ;
+    }
+    for (int i = 0; i < party2->sizeSetOfPokemon(); i++) {
+        if(party2->getPokemonbyindice(i)->getHitPoint() > 0)
+            numberOfWinners2 ++ ;
+    }
 
-    /*if (party1->sizeSetOfPokemon()>party2->sizeSetOfPokemon()) {
+
+
+    if (numberOfWinners1 > numberOfWinners2) {
         std::cout<< "player 1 win the round , player 2 lose the round"<<std::endl;
         nbrwinP1++;
-    }else if (party1->sizeSetOfPokemon()==party2->sizeSetOfPokemon()) {
+    }else if (numberOfWinners1 == numberOfWinners2) {
         std::cout<< "player 1 , player 2 equality in this round "<<std::endl;
     }else {
         std::cout<< "player 2 win the round , player 1 lose the round"<<std::endl;
         nbrwinP2++;
-    }*/
+    }
 }
 

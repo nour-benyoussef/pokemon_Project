@@ -9,11 +9,7 @@
 void DangerZone::handleRequest(Player*& player1,Player*& player2) {
     std::cout << "************* Game state : Welcome to  danger zone another player is here ****************" << std::endl;
 
-    string input;
-    std::cout <<"welcome Player 2 your name please : "<< std::endl;
-    std::cin >> input;
-    player2 = new Player(input);
-    nbrwinP2=0;
+
 
     std::srand(std::time(0));
     // Define the number of iterations
