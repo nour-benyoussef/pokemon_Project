@@ -3,17 +3,20 @@
 //
 
 #include "Player.h"
-Player::Player(string name) {
+
+Player::Player(const string &name) {
     this->namePlayer = name;
-    this->p=new Pokeball();
+    this->p = new Pokeball();
 }
 
 string Player::getName() {
     return namePlayer;
 }
-Pokeball* Player::getPokeball() {
-        return p;
+
+Pokeball *Player::getPokeball() const {
+    return p;
 }
- Player::~Player() {
-     delete p;
- }
+
+Player::~Player() {
+    delete p;
+}

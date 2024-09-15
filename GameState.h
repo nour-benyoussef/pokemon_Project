@@ -16,7 +16,6 @@ protected:
 
 public:
     virtual void handleRequest(Player *&player1, Player *&player2) =0;
-
     virtual ~GameState() = default;
     static int getNbrOfwinP1();
     static int getNbrOfwinP2();

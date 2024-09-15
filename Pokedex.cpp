@@ -26,7 +26,9 @@ void Pokedex::loadFromCSV(const std::string &filename) {
         }
 
 
-        ArrayOfPokemons.push_back(new Pokemon(stoi(donneesLigne.at(0)), donneesLigne.at(1),stod(donneesLigne.at(5)),stod(donneesLigne.at(6)),stod(donneesLigne.at(7)),stoi(donneesLigne.at(11))));
+        ArrayOfPokemons.push_back(new Pokemon(stoi(donneesLigne.at(0)), donneesLigne.at(1), stod(donneesLigne.at(5)),
+                                              stod(donneesLigne.at(6)), stod(donneesLigne.at(7)),
+                                              stoi(donneesLigne.at(11))));
     }
 
     file.close();
@@ -39,29 +41,26 @@ Pokedex *Pokedex::getInstance(const std::string &filename) {
     return instance;
 }
 
-Pokemon * Pokedex::getPokemonbyindice(int indice) {
-    int i=findById (indice);
-    if (i>=0)
+Pokemon *Pokedex::getPokemonbyindice(int indice) {
+    int i = findById(indice);
+    if (i >= 0)
         return new Pokemon(*ArrayOfPokemons.at(i));
 
     return nullptr;
-
-
 }
 
-Pokemon * Pokedex::getPokemonbyname(std::string name) {
-   int i = findByName(name);
-    if (i>=0)
+Pokemon *Pokedex::getPokemonbyname(std::string name) {
+    int i = findByName(name);
+    if (i >= 0)
         return new Pokemon(*ArrayOfPokemons.at(i));
-return nullptr;
+    return nullptr;
 }
-int Pokedex::MaxIdPokemon() {
+
+int Pokedex::MaxIdPokemon() const {
     int max = 0;
-    for (int i=0; i<ArrayOfPokemons.size(); i++) {
-            if (ArrayOfPokemons.at(i)->getId() > max)
-                max = ArrayOfPokemons.at(i)->getId();
+    for (auto ArrayOfPokemon: ArrayOfPokemons) {
+        if (ArrayOfPokemon->getId() > max)
+            max = ArrayOfPokemon->getId();
     }
     return max;
 }
-
-

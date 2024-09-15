@@ -7,12 +7,10 @@
 #include "GameState.h"
 
 
-class Combat : public GameState{
-
+class Combat : public GameState {
 public:
-    void handleRequest(Player*& player1,Player*& player2) override;
+    void handleRequest(Player *&player1, Player *&player2) override;
 };
-
 
 
 #endif //COMBAT_H

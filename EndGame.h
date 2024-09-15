@@ -7,12 +7,10 @@
 #include "Game.h"
 
 
-class EndGame :public GameState{
-    public:
-    void handleRequest(Player*& player1,Player*& player2) override;
-
+class EndGame : public GameState {
+public:
+    void handleRequest(Player *&player1, Player *&player2) override;
 };
-
 
 
 #endif //ENDGAME_H

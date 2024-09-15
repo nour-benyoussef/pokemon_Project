@@ -10,17 +10,16 @@ using std::string;
 
 
 class Player {
-    private:
+private:
     string namePlayer;
     Pokeball *p;
-    public:
-    Player(string name);
+
+public:
+    Player(const string &name);
     string getName();
-    Pokeball *getPokeball();
+    Pokeball *getPokeball() const;
     ~Player();
-
 };
-
 
 
 #endif //PLAYER_H

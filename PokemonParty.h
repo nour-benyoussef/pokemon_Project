@@ -8,16 +8,15 @@
 #include "Pokeball.h"
 
 
-class PokemonParty :public SetOfPokemon {
+class PokemonParty : public SetOfPokemon {
 public:
-    PokemonParty(int id1, int id2, int id3, int id4, int id5, int id6, Pokeball *p );
-    void RecuperePokemon(Pokeball *p , int indice);
-    ~PokemonParty();
+    PokemonParty(int id1, int id2, int id3, int id4, int id5, int id6, Pokeball *p);
+    void RecuperePokemon(Pokeball *p, int indice);
+    ~PokemonParty() override;
     Pokemon *getPokemonbyindice(int indice) override;
     Pokemon *getPokemonbyname(std::string name) override;
-    void removePokemon (int k) ;
+    void removePokemon(int k);
 };
-
 
 
 #endif //POKEMONPARTY_H

@@ -9,10 +9,11 @@
 
 class Attente : public GameState {
 public:
-    void handleRequest(Player*& player1,Player*& player2) override;
+    void handleRequest(Player *&player1, Player *&player2) override;
+
+    Attente();
 
 };
-
 
 
 #endif //ATTENTE_H

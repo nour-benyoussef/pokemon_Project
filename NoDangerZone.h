@@ -7,12 +7,10 @@
 #include "GameState.h"
 
 
-class NoDangerZone : public GameState{
-    public:
-    void handleRequest(Player*& player1,Player*& player2) override;
-
+class NoDangerZone : public GameState {
+public:
+    void handleRequest(Player *&player1, Player *&player2) override;
 };
-
 
 
 #endif //NODANGERZONE_H

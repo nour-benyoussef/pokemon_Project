@@ -1,0 +1,21 @@
+Les régles du jeu
+ 1/ État d'attente : Lors de l'instanciation du jeu, celui-ci se met en attente des joueurs.
+
+ 2/ État d'initialisation : Cet état consiste à créer le premier joueur qui entre dans la zone sans danger.
+
+ 3/ Exploration dans la zone sans danger : Le joueur 1, créé lors de l'initialisation, peut collecter des Pokémon (issus du Pokédex) pour remplir son Pokéball.
+ Dans cette zone, il est seul et n'y a pas de danger.
+ À la fin de cette exploration, le joueur 2 est créé pour entrer dans la zone dangereuse.
+
+ 4/ Exploration dans la zone dangereuse : Dans cette zone, les joueurs 1 et 2 peuvent se rencontrer.
+ Tous deux collectent des Pokémon pour remplir leurs Pokéballs, mais cette fois, il existe des dangers de rencontre pour se combattre.
+
+ 5/ État de combat : Les joueurs 1 et 2 se rencontrent pour se combattre.
+ Chaque joueur doit choisir 6 Pokémon pour le combat.
+ Le premier Pokémon du joueur 1 affronte celui du joueur 2.
+ Celui dont le point d'attaque est supérieur au point de défense de l'adversaire effectue une attaque, sinon l'attaque échoue.
+ Ce processus se répète pour les 5 autres Pokémon (2 contre 2, 3 contre 3, etc.).
+ Le joueur ayant le plus de Pokémon avec des points de vie (hit points) supérieurs à 0 remporte la victoire.
+
+ 6/ État de fin de jeu : Le joueur qui remporte 2 combats devient le vainqueur du jeu.
+ Le premier joueur à remporter 2 combats est déclaré gagnant.

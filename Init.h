@@ -7,12 +7,10 @@
 #include "GameState.h"
 
 
-class Init : public GameState{
+class Init : public GameState {
 public:
-    void handleRequest(Player*& player1,Player*& player2) override;
-
+    void handleRequest(Player *&player1, Player *&player2) override;
 };
-
 
 
 #endif //INIT_H

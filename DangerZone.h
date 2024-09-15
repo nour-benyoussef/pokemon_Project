@@ -7,11 +7,10 @@
 #include "GameState.h"
 
 
-class DangerZone :public GameState{
+class DangerZone : public GameState {
 public:
-    void handleRequest(Player*& player1,Player*& player2) override;
+    void handleRequest(Player *&player1, Player *&player2) override;
 };
-
 
 
 #endif //DANGERZONE_H

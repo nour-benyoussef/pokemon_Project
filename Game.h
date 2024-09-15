@@ -9,15 +9,16 @@
 
 
 class Game {
-  private:
-  GameState *state = new Attente();
-  Player *player1;
-  Player *player2;
+private:
+    GameState *state;
+    Player *player1 = nullptr;
+    Player *player2 = nullptr;
+
 public:
-  void setState(GameState * newState);
-  void request();
-  void setPlayer(Player* player);
-  Player* getPlayer();
+    Game();
+    void setState(GameState *newState);
+
+    void request();
 };
 
 
